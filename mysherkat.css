@@ -1,0 +1,511 @@
+@import 'reset.css';
+body {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    /* min-height: 100%; */
+    /* width: 100%; */
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    /* height: 20000px; */
+    width: 1200px;
+    /* background-color: red; */
+    margin: auto;
+}
+
+/* START NAVBAR */
+
+#nav {
+    margin-top: 10px;
+    height: 60px;
+    /* background-color: #17429a; */
+    background-color: #231d69;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+#nav img {
+    width: 50px;
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+#nav .left ul li {
+    display: inline-block;
+    padding: 21px 22px;
+    /* margin-right: 20px; */
+    /* margin-left: 5px; */
+    /* margin-top: 20px;
+    margin-left: 50px; */
+}
+
+#nav .left ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+#nav .left .drp {
+    background-color: #231d69;
+    width: 150px;
+}
+
+#nav .left .dropdown {
+    width: 150px;
+    position: absolute;
+    top: 60px;
+    left: 490px;
+    z-index: 9999;
+    display: none;
+}
+
+#nav .left div {
+    position: absolute;
+    background-color: #231d69;
+    width: 100%;
+    text-align: center;
+    /* top: -10px; */
+}
+
+#nav .left div a {
+    display: block;
+    padding: 16px 12px;
+    margin-top: 4px;
+}
+
+#nav .left .drp:hover .dropdown {
+    transition: 2s;
+    display: block;
+    
+}
+
+/* #nav .left li:hover {
+    background-color: white;
+    color: darkblue;
+
+} */
+
+#nav .left a:hover { 
+    color: darkblue;
+    background-color: white;
+    padding: 20px;
+    transition: 2s;
+    border-radius: 4px;
+}
+
+
+
+#nav .left .dropdown a:hover {
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+}
+
+#nav .right {
+    float: right;
+    display: inline-block;
+}
+
+#nav .right div {
+    position: relative;
+    bottom: 38px;
+    right: 40px;
+    display: inline-block;
+}
+
+#nav .right div a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+#nav .right .sign a {
+    background-color: rgb(5, 172, 5);
+    padding: 10px 20px;
+}
+
+#nav .right .log a {
+    background-color: red;
+    padding: 10px 20px;
+}
+
+#nav .right .sign a:hover {
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+    padding: 20px;
+}
+
+#nav .right .log a:hover {
+    background-color: white;
+    color: darkblue;
+    transition: 1s;
+    padding: 20px;
+}
+
+/* END NAVBAR */
+
+/* Start home */
+
+#home {
+    background-image: url('image/stamford5.jpg');
+    position: relative;
+    top: 10px;
+    height: 100%;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+#home .right {
+    float: right;
+}
+
+#home .right img {
+    width: 350px;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    border-radius: 50%;
+}
+
+#home .title {
+    color: rgb(11, 11, 125);
+    font-size: 30px;
+    position: relative;
+    left: 350px;
+    top: 580px;
+    font-weight: bold;
+    /* display: inline-block; */
+    /* display: inline-block; */
+}
+
+#home .left {
+    background-color: rgb(42, 82, 152, 0.8);
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: 70px;
+    border-radius: 20px;
+}
+
+#home .left .t1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#home .left ul li {
+    padding: 30px 40px;
+    color: white;
+    font-size: 18px;
+}
+
+/* END HOME */
+
+/* STRAT FIXTURES */
+
+#fixtures {
+    margin-top: 20px;
+    /* background-color: lightblue; */
+    /* height: 1000px; */
+    text-align: center;
+    direction: ltr;
+    /* overflow: hidden; */
+}
+
+#fixtures .title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#fixtures svg {
+    color: #313131;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#fixtures .chev {
+    position: relative;
+    animation-name: chevv;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chevv {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 16px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+#fixtures .title {
+    padding: 4px;
+    color: #1d40a7;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 5px solid #1d40a7;
+    display: inline-block;
+}
+
+#fixtures .next {
+    background-color: lightblue;
+    width: 300px;
+    /* height: 300px; */
+    display: inline-block;
+    text-align: center;
+    padding: 40px;
+    /* overflow: hidden; */
+}
+
+#fixtures .next img {
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    border-bottom: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+#fixtures .next h2 {
+    font-size: 22px;
+    color: black;
+    margin-top: 10px;
+}
+
+.slick-dots {
+    bottom: -50px !important;
+}
+
+.slick-dots li button::before {
+    font-size: 24px !important;
+    /* margin-top: 60px !important; */
+}
+
+/* END FIXTURES */
+
+/* START GALLERY */
+
+#champion h2 {
+    font-size: 30px;
+    color: royalblue;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+#champion .item {
+    background-color: lightgray;
+    text-align: center;
+    height: 100px;
+}
+
+#champion .item p {
+    color: blue;
+    font-size: 30px;
+    margin: 30px;
+    font-family: serif;
+}
+
+/* END GALLERY */
+
+/* START FADE */
+
+#gallery {
+    margin-top: 200px;
+    background-color: rgba(250, 247, 247, 0.911);
+}
+
+#gallery .title {
+    font-size: 30px;
+    color: rgba(2, 15, 157, 0.891);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* margin-top: 30px; */
+}
+
+#gallery .item {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#gallery .item img {
+    display: inline-block;
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: -30px;
+}
+
+/* END FADE */
+
+/* START NOTE */
+
+#note {
+    background-color: #117e20c9;
+    margin-top: 200px;
+    height: 50px;
+}
+
+#note .right {
+    float: left;
+    padding: 14px;
+}
+
+#note .right p {
+    color: white;
+    font-size: 24px;
+}
+
+#note .left {
+    float: right;
+    padding: 14px;
+}
+
+#note .left .input {
+    width: 300px;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-top: -10px;
+}
+
+#note .left .input:focus { 
+    font-size: 16px;
+    padding: 6px;
+}
+
+#note .left .submit {
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 30px;
+}
+
+#note .left .submit:hover { 
+    background-color: white;
+    color: darkblue;
+    font-size: 14px;
+    
+    
+}
+
+/* END NOTE */
+
+/* START FOOTER */
+
+#footer {
+    height: 350px;
+    background-color: #021B79;
+    margin-top: 10px;
+}
+
+#footer .right {
+    float: right;
+}
+
+#footer .right h2 {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    border-bottom: 2px solid white;
+    padding: 10px 4px;
+}
+
+#footer .right .soc {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 40px;
+}
+
+#footer .right .soc svg {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+#footer .midle {
+    position: relative;
+    /* top: 30px; */
+    display: inline-block;
+    /* background-color: red; */
+    left: 300px;
+}
+
+#footer .midle h2 {
+    font-size: 24px;
+    color: white;
+    margin-top: 26px;
+    border-bottom: 2px solid white;
+    padding: 10px 4px;
+    text-align: center;
+}
+
+#footer .midle ul li {
+    margin-top: 20px;
+    /* text-align: center; */
+    color: white;
+    font-size: 18px;
+}
+
+#footer .left {
+    float: left;
+}
+
+#footer .left h2 {
+    font-size: 24px;
+    color: white;
+    margin-top: 26px;
+    border-bottom: 2px solid white;
+    padding: 10px 4px;
+    text-align: center;
+}
+
+#footer .left ul li {
+    margin-top: 20px;
+    /* text-align: center; */
+    color: white;
+    font-size: 18px;
+}
+
+#footer
+/* END FOOTER */
